@@ -26,6 +26,8 @@ def gerar_relatorio():
     print("="*50)
     print("   AUDITORIA BÁSICA DE CIBERSEGURANÇA PARA PMEs   ")
     print("="*50)
+    print(f"Responsável: Alexandre Machia Araujo (RU: 5436041)")
+    print(f"Local: Cerquilho, SP | Foco: ODS 9")
     print(f"Sistema Operacional: {platform.system()} {platform.release()}")
     print(f"Data da Auditoria: {datetime.now().strftime('%d/%m/%Y %H:%M:%S')}")
     print("-" * 50)
@@ -58,3 +60,7 @@ def gerar_relatorio():
 
 if __name__ == "__main__":
     gerar_relatorio()
+    
+    # Esta linha garante que a janela do terminal permaneça aberta após a execução
+    print("\n")
+    input("[!] Auditoria finalizada. Pressione ENTER para sair...")
